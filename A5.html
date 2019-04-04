@@ -3,9 +3,8 @@
 <head>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
   <script>
-
-
 $(document).ready(function(){
   $("li").click(function(){
     $(this).hide();
@@ -33,13 +32,13 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-  $("button").click(function(){
+  $("#button1").click(function(){
     $("p").html("Tips:  Salting the water is your only opportunity to season the pasta itself. The water needs to “taste like the sea,” in order to flavour the pasta. Three litres of water requires a minimum of 1 tbsp salt.");
   });
 });
 
 $(document).ready(function(){
-  $("button").click(function(){
+  $("#showimg").click(function(){
     $("img").toggle();
   });
 });
@@ -51,18 +50,15 @@ $(document).ready(function(){
 
 
 
-
-
-
   <center>  <h1>How To Make Clam Linguini</h1>
   <img src="clamlinguini.jpg"/> </center>
-  <center><button>Hide or Show Image</button></center>
+  <center><button id="showimg">Hide or Show Image</button></center>
 
 <center><h4>As you add each ingrediant, click the bullet to make it go away!</h4></center>
   <ul>
     <li>1 tablespoon Morton kosher salt,</li>
     <li>12 garlic cloves, divided</li>
-    <li>4 ounces sourdough or country-style bread, crusts removed, cut into ½-inch pieces</li>
+    <li>4 ounces sourdough or country-style bread, crusts removed, cut into ½ inch pieces</li>
     <li>2 tablespoons plus ¼ cup olive oil, plus more for serving</li>
     <li>2 teaspoons finely grated lemon zest</li>
     <li>½ teaspoon crushed red pepper flakes, plus more for serving</li>
@@ -88,7 +84,8 @@ $(document).ready(function(){
   <li>Enjoy</li>
 </ol>
 
-<button>!!TIP!!</button>
+
+<button id="button1">!!TIP!!</button>
 <p>CLICK ABOVE FOR A TIP!</p>
 
 </body>
