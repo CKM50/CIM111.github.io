@@ -1,16 +1,96 @@
-<HTML>
-  <BODY style="background-color:lightpink;">
-    <font size="24pt" color="white">ASSIGNMENT 5
+<!DOCTYPE HTML>
+<html>
+<head>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
 
-    <a href="index.html">
-      <p>
-      <img width= "25%" src="venusetfleur5.jpg"/><style="background-color:white;"/>
-      </p>
-    </a>
 
-<p>
-  <a href="index.html">BACK</a>
-</p>
+$(document).ready(function(){
+  $("li").click(function(){
+    $(this).hide();
+  });
+});
 
-  <body>
-</HTML>
+
+$(document).ready(function(){
+  $("h1").mouseover(function(){
+    $("h1").css("background-color", "plum");
+  });
+  $("h1").mouseout(function(){
+    $("h1").css("background-color", "lightgray");
+  });
+});
+
+
+$(document).ready(function(){
+  $("p").mouseenter(function(){
+    $("p").css("background-color", "Moccasin");
+  });
+  $("p").mouseleave(function(){
+    $("p").css("background-color", "tan");
+  });
+});
+
+$(document).ready(function(){
+  $("button").click(function(){
+    $("p").html("Tips:  Salting the water is your only opportunity to season the pasta itself. The water needs to “taste like the sea,” in order to flavour the pasta. Three litres of water requires a minimum of 1 tbsp salt.");
+  });
+});
+
+$(document).ready(function(){
+  $("button").click(function(){
+    $("img").toggle();
+  });
+});
+
+
+</script>
+</head>
+<body>
+
+
+
+
+
+
+  <center>  <h1>How To Make Clam Linguini</h1>
+  <img src="clamlinguini.jpg"/> </center>
+  <center><button>Hide or Show Image</button></center>
+
+<center><h4>As you add each ingrediant, click the bullet to make it go away!</h4></center>
+  <ul>
+    <li>1 tablespoon Morton kosher salt,</li>
+    <li>12 garlic cloves, divided</li>
+    <li>4 ounces sourdough or country-style bread, crusts removed, cut into ½-inch pieces</li>
+    <li>2 tablespoons plus ¼ cup olive oil, plus more for serving </li>
+    <li>2 teaspoons finely grated lemon zest  </li>
+    <li>½ teaspoon crushed red pepper flakes, plus more for serving </li>
+    <li>⅓ cup dry white wine</li>
+    <li>2 pounds littleneck clams (about 24) or cockles (about 32), scrubbed</li>
+    <li>12 ounces linguine or spaghetti </li>
+    <li>½ cup finely chopped parsley</li>
+    <li>2 tablespoons unsalted butter</li>
+  </ul>
+
+  <center><h1> Directions </h1></center>
+  <center><h4>As you finish each step, click the bullet to make it go away!</h4></center>
+  <ol>
+<li>  Boil salt in 10 cups of boiling water in a large pot.</li>
+  <li>  Coat a large saute pan with olive oil and add half the garlic cloves. Bring the pan to a medium- high heat and cook until the garlic becomes golden brown. When the garlic is golden brown and very aromatic, remove it and discard, it has fulfilled its garlic destiny. Put 3 1/2 dozen clams in the pan with the wine and 1/2 cup of water. Cover the pan and bring it to a boil over medium heat. Cover and cook until the clams open, about 10 minutes. Remove the clams from the pan and reduce the cooking liquid. Let the clams cool slightly, then remove them from the shells and reserve. Discard the shells. Pour the cooking liquid into a measuring cup.</li>
+  <li>  Coat the same saute pan again with olive oil and add the remaining garlic cloves and a large pinch of crushed pepper flakes. Bring the pan to a medium-high heat and cook until the garlic becomes golden brown. When the garlic is golden brown and very aromatic, remove it and discard, it has fulfilled its garlic destiny. Add the remaining raw clams and reserved clam cooking liquid to the pan. When adding the reserved clam liquid, be sure to check for sand and grit in the bottom, you may lose the last couple of tablespoons of juice but that is better than sand in your pasta! Cover and cook until the clams open.
+</li>
+  <li>  While the clams are cooking, drop the linguine into the salted boiling water and cook until the pasta is very "al dente" maybe a minute or so less than the box directs.
+</li>
+  <li>  Remove the cooked clams in their shells from the pan and keep warm. Add the butter and cooked clams that have been removed from their shells back to the pan. Bring the liquid to a boil and toss in the cooked pasta and the herbs. Cook the pasta together with the sauce until the sauce clings to the pasta. Turn off the heat and toss in the grated Parmigiano-Reggiano, if using, and finish with a drizzle of big fat finishing oil. Toss or stir vigorously to combine.
+</li>
+  <li>  Divide the pasta into serving dishes and garnish with the clams that are still in their shells and a little more shaved Parmigiano-Reggiano, if desired.</li>
+  <li>Enjoy</li>
+</ol>
+
+<button>!!TIP!!</button>
+<p>CLICK ABOVE FOR A TIP!</p>
+
+</body>
+</html>
