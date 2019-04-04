@@ -1,81 +1,178 @@
+
 <!DOCTYPE html>
-<html lang='en'>
-  <head>
-    <meta charset='UTF-8'/>
-    <meta name='viewport'
-      content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
-    <title>Responsive Design</title>
-    <link rel='stylesheet' href='layout3.css'/>
-  </head>
-
-  <style>
-    .item1 { grid-area: header; }
-    .item2 { grid-area: menu; }
-    .item3 { grid-area: main; }
-    .item4 { grid-area: right; }
-    .item5 { grid-area: footer; }
-
-    .grid-container {
-      display: grid;
-      grid-template-areas:
-        'header header header header header header'
-        'menu main main main right right'
-        'menu footer footer footer footer footer';
-      grid-gap: 10px;
-      background-color: #FFEBCD;
-      padding: 10px;
-    }
-
-    .grid-container > div {
-      background-color: rgb(188,143,143);
-      text-align: center;
-      padding: 20px 0;
-      font-size: 30px;
-    }
+<html>
+<font size="6" color="black">
 
 
-    </style>
-  <body>
-    <font size="6" color="white">
+<head>
+<meta charset='UTF-8'/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Design</title>
+<link rel="stylesheet"href="layout3.css">
 
-      <div class="grid-container">
-    <div class="item1">Castor Oil:  According to Dermatologist Dr. Deepali Bhardwaj, castor oil is the best oil to enrich your scalp. It contains ricinoleic acid and omega-6 fatty acids and therefore when massaged onto the scalp it helps in increasing the blood circulation which improves hair growth.</div>
-      <img src="castoroil.jpg"
-    <div class="item2">Coconut Oil:  Coconut oil stimulates hair growth getting deep into its follicles. Coconut oil promotes the scalp health fighting against such problems as insect bites, lice and dandruff. Coconut oil adds luster, shine and softness to the hair. Coconut oil prevents hair breakage and split ends, contributing to hair length.</div>
-        <img src="coconutoil.jpg"
-    <div class="item3">Jojaba Oil:  The oil can also moisturize the scalp and may be a dandruff remedy. Jojoba is rich in vitamins and minerals that nourish hair. Because it strengthens hair, it is also thought that jojoba oil can prevent hair loss and promote hair thickness.</div>
-        <img src="jojabaoil.jpg"
-    <div class="item4">Tea Tree:  For hair growth: tea tree oil helps to unclog hair follicles and nourish your roots. To use tea tree oil as a hair growth treatment, mix a few drops of tea tree oil with any carrier oil (coconut, jojoba, almond). Mix it well and massage the mixture onto the scalp. Rinse thoroughly.</div>
-          <img src="teatreeoil.jpg"
-    <div class="item5">Oilve Oil:  Olive oil is wonderful for hair care. Using olive oil for hair growth can help you get long and thicker hair faster. It has several benefits repairing the damaged hair, Applying olive oil to your scalp will help to prevent dandruff, fungus, and other scalp issues that lead to dry, flaky skin.</div>
-          <img src="oliveoil.jpg"
+
+<style>
+
+
+.grid-container1 {
+  display: grid;
+  grid-template-columns: auto ;
+  background-color: pink;
+  padding: 10px;
+}
+.grid-item1 {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: pink;
+  padding: 10px;
+}
+.grid-item2 {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.grid-container3 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: pink;
+  padding: 10px;
+}
+.grid-item3 {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.grid-container4 {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  background-color: pink;
+  padding: 10px;
+}
+.grid-item4 {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+
+
+</style>
+
+</head>
+<body>
+
+  <div class="row">
+    <div class="col-3"></div> <!-- 25% -->
+    <div class="col-9"></div> <!-- 75% -->
   </div>
 
-    <div class='page'>
-      <div class='section menu'>TINAKELLY</div>
-      <div class='section header'>CALIYA LINE
 
-      </div>
-      <div class='section content'>Hair Oils
+<div class="header">
+  <center><h1>TinaKelly Hair Line</h1></center>
+</div>
 
-      </div>
-      <div class='section sign-up'>Hair Type
+<div class="row">
+  <div class="col-3 col-s-3 menu">
+    <ul>
+      <li>Hair Oils</li>
+      <li>Moisturizing Methods</li>
+      <li>Hairstyles</li>
+      <li>Products</li>
+    </ul>
+  </div>
 
-      </div>
-      <div class='section feature-1'>Protective Hair Styles
+  <div class="col-6 col-s-9">
+    <h1>The Line</h1>
+      <img src="Images/plantsforhair.jpg" alt="Nature" class="responsive">
+    <main>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt efficitur venenatis. Nulla et porta turpis, aliquet gravida turpis. Fusce quis tempor nibh. Suspendisse mollis neque massa, nec vestibulum justo efficitur a. </p>
+    </main>
+  </div>
 
-      </div>
-      <div class='section feature-2'><center>Moisture and Growth Methods</center>
-
-      </div>
-      <div class='section feature-3'> Follow Me
-      </div>
+  <div class="col-3 col-s-12">
+    <div class="aside">
+      <h2>What's in Our Products?</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt efficitur venenatis. Nulla et porta turpis, aliquet gravida turpis. Fusce quis tempor nibh. Suspendisse mollis neque massa, nec vestibulum justo efficitur a. </p>
+      <h2>How often should I deep condition a month?</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt efficitur venenatis. Nulla et porta turpis, aliquet gravida turpis. Fusce quis tempor nibh. Suspendisse mollis neque massa, nec vestibulum justo efficitur a. </p>
+      <h2>What curly hairstlyes are good for the winter?</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt efficitur venenatis. Nulla et porta turpis, aliquet gravida turpis. Fusce quis tempor nibh. Suspendisse mollis neque massa, nec vestibulum justo efficitur a. </p>
     </div>
+  </div>
+</div>
+
+
+<br>
+<div class="grid-container1">
+  <div class="grid-item1">Vestibulum mattis vel sem quis mollis. Fusce fringilla dictum luctus. Nullam at purus in odio pharetra faucibus sit amet ut ex. Pellentesque mattis in enim sed pretium. Phasellus eget auctor massa, id feugiat massa. Curabitur interdum ultricies orci sit amet pretium. In in molestie arcu. In tempor nunc eu nisi condimentum semper id in leo. Morbi facilisis, elit eget ornare aliquet, nibh urna commodo magna, ut cursus nisl enim ut lacus. Mauris vehicula lectus a quam interdum, vestibulum facilisis lacus bibendum. Proin consequat porta est ornare porttitor. Morbi convallis dui id bibendum placerat. Quisque et lacus sem. Etiam accumsan neque vitae placerat sollicitudin. Aenean nec leo tincidunt, lacinia dui id, auctor magna.
+</div>
+
+</div>
+</br>
+
+<br>
+
+<div class="grid-container2">
+  <div class="grid-item2">Aliquam dapibus, mi vel posuere dictum, purus quam varius sem, et vehicula neque justo eu leo. Morbi eget lectus ac sapien convallis faucibus vitae eleifend risus. Fusce volutpat rutrum sodales. </div>
+  <div class="grid-item2">Curabitur aliquet mauris sed nisl porttitor, sed aliquet mauris tempus. Nulla laoreet nibh vel condimentum ultricies. Pellentesque mattis nulla eu velit interdum rhoncus. In consequat luctus quam, aliquam pretium justo varius non.</div>
+</div>
+</br>
+
+<br>
+
+<div class="grid-container3">
+  <div class="grid-item3">Cras ultricies, velit ut dictum consectetur, nisl odio ultrices risus, nec lacinia lorem sem eu ligula. Ut eget purus facilisis, dapibus neque in, tempor dui.</div>
+  <div class="grid-item3">Curabitur aliquet mauris sed nisl porttitor, sed aliquet mauris tempus. Nulla laoreet nibh vel condimentum ultricies. Pellentesque mattis nulla eu velit interdum rhoncus. In consequat luctus quam, aliquam pretium justo varius non.</div>
+  <div class="grid-item3">Donec consectetur nisl ac massa facilisis, in condimentum risus consequat. Proin consectetur sem a tempus finibus. Pellentesque dapibus suscipit enim, eget tristique ligula ultricies ut.</div>
+</div>
+
+</br>
+
+<br>
+
+<div class="grid-container4">
+  <div class="grid-item4">Cras ultricies, velit ut dictum consectetur, nisl odio ultrices risus, nec lacinia lorem sem eu ligula. Ut eget purus facilisis, dapibus neque in, tempor dui.</div>
+  <div class="grid-item4">Curabitur aliquet mauris sed nisl porttitor, sed aliquet mauris tempus. Nulla laoreet nibh vel condimentum ultricies. Pellentesque mattis nulla eu velit interdum rhoncus. In consequat luctus quam, aliquam pretium justo varius non.</div>
+  <div class="grid-item4">Donec consectetur nisl ac massa facilisis, in condimentum risus consequat. Proin consectetur sem a tempus finibus. Pellentesque dapibus suscipit enim, eget tristique ligula ultricies ut.</div>
+  <div class="grid-item4">Donec consectetur nisl ac massa facilisis, in condimentum risus consequat. Proin consectetur sem a tempus finibus. Pellentesque dapibus suscipit enim, eget tristique ligula ultricies ut.</div>
+</div>
+
+</br>
+
+
+<div class="footer">
+  <center>
+        <footer>
+          <p>Posted by: Christina Matthews</p>
+          <p>Contact information: <a href="mailto:tinakellym@gmail.com">tinakellym@gmail.com</a>.</p>
+        </footer>
+  </center>
+</div>
 
 
 
 
 
 
-  </body>
+
+
+
+
+</body>
 </html>
