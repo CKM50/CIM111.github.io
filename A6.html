@@ -1,16 +1,255 @@
+
 <HTML>
-  <BODY style="background-color:lightpink;">
-    <font size="24pt" color="white">ASSIGNMENT 6
 
-    <a href="index.html">
-      <p>
-      <img width= "25%" src="venusetfleur6.jpg"/><style="background-color:white;"/>
-      </p>
-    </a>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<p>
-  <a href="index.html">BACK</a>
-</p>
+<script src="https://ajax.googleapis.com/ajax/libs/prototype/1.7.3.0/prototype.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/scriptaculous/1.9.0/scriptaculous.js"></script>
 
-  <body>
+
+
+
+  <style>
+  body{font-family: 'Oswald', sans-serif;}
+  body {
+  background-image: url("Jamaica5.jpg");
+}
+
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position:relative;
+  top: 60%
+  width:auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+
+}
+
+/* Position the "next button" to the right */
+.next {
+  right:0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+
+a{text-decoration: none}
+a{color: hotpink;}
+  </style>
+
+
+  </head>
+  <body style="background-color:#cccccc;">
+    <font size="6" color="white">
+
+      <a href='#' onclick="new Effect.Scale(this.parentNode, 150); return false;"><center><h1>JAMAICA</a></h1></center>
+
+  <center>  <ul><h4>Activities in Jamaica:</h4></ul>
+    <li>Kayak</li>
+    <li>Try New Foods</li>
+    <li>Swim in the Ocean</li>
+    <li>Take pictures and videos</li>
+    <li>Explore the Area</li></center>
+
+  <center>  <p>Every since I was a young girl, I always wanted to travel to Jamiaca.  It has beautiful scenery and many different foods and fruits to try.  The activities are endless and I can take so many pictures and make a scrap book out of them!</p></center>
+
+
+    <center><div onclick="$(this).switchOff()">
+    Jamaica is where all your troubles...dissapear...(click me)
+  </div></center>
+
+
+
+    <center><div onclick="$(this).shake()">
+It is full of extravagant places!
+</div></center>
+
+
+<br>
+<center><div id="slidedown_demo" style="display:none; width:1000px; height:57px; background:black; text-align:center; font-size:25">
+  <div>
+  The country has more churches per square mile than any other country in the world.
+  </div>
+  </div>
+<a href="#" onclick="Effect.SlideDown('slidedown_demo'); return false;">Click here for a fact about Jamaica!</a></center>
+
+</br>
+
+
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <img src="Jamaica2.jpg" style="width:100%">
+  <div class="text">River Raft</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <img src="Jamaica3.jpg" style="width:100%">
+  <div class="text">Lunch on Beach</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <img src="Jamaica4.jpg" style="width:100%">
+  <div class="text">Island House</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 5</div>
+  <img src="Jamaica7.jpg" style="width:100%">
+  <div class="text">Blue Holes</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 5</div>
+  <img src="Jamaica6.jpg" style="width:100%">
+  <div class="text">Rainbow</div>
+</div>
+</div>
+
+
+<center>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</center>
+
+<script>
+
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dot[slideIndex-1].className += "active";
+
+}
+</script>
+
+
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+
+</div>
+
+
+<center><a href="#" onclick="Effect.ScrollTo('article_top'); return false;">BACK TO TOP</a></center>
+
+</body>
+
+
 </HTML>
