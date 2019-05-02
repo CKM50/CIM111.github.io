@@ -9,7 +9,7 @@
 <link rel="stylesheet" type="text/css" href="finalstyle.css">
 <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Pridi" rel="stylesheet">
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <!-- This is the beginning of style.  I listed my colors first.-->
 <style>
 
@@ -22,9 +22,159 @@ body{font-family: 'Pridi', serif;}
 h1.a{font-family: 'Abel', sans-serif;}
 h1.a {font-size: 80px;}
 
+img{width: 300px;
+height: 400px}
+
+h3{color:lightpink}
+
+
+
+.grid-container {
+  display: grid;
+
+  grid: 170px / auto auto ;
+  grid-gap: 5px;
+  background-color: Burlywood;
+  padding-bottom: 10x;
+  padding: 10px;
+}
+
+.item1 {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+
+}
+
+.item2 {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+
+}
+
+.grid-container > div {
+  background-color: bisque;
+  text-align: left;
+  padding: 10px 0;
+
+    width: 100% ;
+  font-size: 14px;
+
+}
+
+.media {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.media > * {
+    flex: 1 1 250px;
+}
 </style>
+
+<script>
+$(document).ready(function(){
+$("li").click(function(){
+  $(this).hide();
+});
+});
+
+
+$(document).ready(function(){
+$("h3").mouseover(function(){
+  $("h3").css("background-color", "plum");
+});
+$("h3").mouseout(function(){
+  $("h3").css("background-color", "lightgray");
+});
+});
+
+
+$(document).ready(function(){
+$("p").mouseenter(function(){
+  $("p").css("background-color", "Moccasin");
+});
+$("p").mouseleave(function(){
+  $("p").css("background-color", "tan");
+});
+});
+
+$(document).ready(function(){
+$("#button1").click(function(){
+  $("p").html("Tips:  Salting the water is your only opportunity to season the pasta itself. The water needs to “taste like the sea,” in order to flavour the pasta. Three litres of water requires a minimum of 1 tbsp salt.");
+});
+});
+
+$(document).ready(function(){
+$("#showimg").click(function(){
+  $("img").toggle();
+});
+});
+
+
+</script>
+
 </head>
 
 <body>
-  <center><h1 class="a">Lobster Theodore</h1></center>
+  <center><h1 class="a">Stuffed Lobster</h1></center>
+  <center><h3>Serves 2</h3></center>
+  <center><button id="showimg">Hide or Show Image</button></center>
+  
+  <br>
+  <center><img src="Images/SteakandLobster.jpg"/></center>
+  </br>
+
+  <center><h4>As you add each ingrediant, click the bullet to make it go away!</h4></center>
+
+  <br>
+  <div class="grid-container">
+    <div class="item1"><ul>
+      <li>4 Lobster Tails</li>
+      <li>3 Tablespoons of butter</li>
+      <li>2 Tablespoons shallots</li>
+      <li>Salt</li>
+      <li>1/2 Cup Chopped Mushrooms</li>
+      <li>1 Tablespoon Flour</li>
+
+
+        </ul></div>
+
+
+  <div class="item2"><ul>
+      <li>1/2 Cup Whole Milk</li>
+      <li>2 Tablespoons of Heavy Cream</li>
+      <li>1 Tablespoon Chopped Fresh Taragon</li>
+      <li>Cayenne Pepper</li>
+      <li>Bread Crumbs</li>
+      <li>Parmesean Cheese</li>
+    </ul></div>
+  </div>
+  </br>
+
+
+
+<h4>DIRECTIONS</h4>
+<center><h4>As you finish each step, click the bullet to make it go away!</h4></center>
+<ol>
+  <li>Cut bottom shell of lobster tails using kitchen scissors along each side where it meets the top shell.  Dont remove the shell!</li>
+  <li>Melt 2 tablespoons butter in a skillet over medium-high heat. Place lobster tails cut side down in the butter. Cook for about 3 minutes with a cover. Turn lobster to their right side, cover and cook for 1 minute. Lean them to the other side, cover and cook 1 minute more.</li>
+  <li>Remove the lobsters from the skillet and put them in a bowl. Remove any shell pieces from the skillet. </li>
+  <li>Place 1 tablespoon butter in the skillet over medium heat.  Add in the shallots and a pinch of salt. Cook and stir until pan starts to deglaze and shallots soften, 3 to 4 minutes. Add mushrooms; cook stir until golden brown, 5 to 6 minutes. Add flour; stir until mushrooms are coated and cook for 2 minutes.  Add milk; cook and stir until pan is completely deglazed and milk begins to thicken and turn bubbly, about 2 minutes.  Let the sauce cool and put it into a bowl.</li>
+  <li>Remove lobster meat from the shell, leaving top shell intact. Remove any bits of bottom shell from the meat.</li>
+  <li>Preheat oven to 450 degrees F (230 degrees C). Line a baking pan with crinkled up foil.  Add the lobsters into the baking pan.</li>
+  <li>Slice lobster meat down the middle and check for and remove any dark veins. Chop into 1/2-inch pieces. Transfer meat to a mixing bowl. Add cooled sauce, tarragon, pinch of salt, and cayenne pepper. Stir gently until well blended.</li>
+  <li>Divide mixture among the lobster tail shells; place in prepared foil-lined pan. Sprinkle each lobster tail with about 1/2 teaspoon bread crumbs and 1/2 teaspoon grated cheese. Drizzle melted butter on the stuffed shells.</li>
+<li>Bake in preheated oven until nicely browned and heated through, about 10 minutes. If you like, you can turn on the broiler and broil 1 minute until tops are golden and crispy.</li>
+  <li>Bon Appétit!</li>
+</ol>
+
+
+<center><h4>FINISHED PRODUCT</h4></center>
+<center><img src="Images/lobsterheader.JPG"/></center>
+
+<center><h4>MOUTH WATERING</h4>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/e6htz9jMW4Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
 </body>

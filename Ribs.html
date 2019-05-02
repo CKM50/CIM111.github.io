@@ -9,7 +9,7 @@
 <link rel="stylesheet" type="text/css" href="finalstyle.css">
 <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Pridi" rel="stylesheet">
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <!-- This is the beginning of style.  I listed my colors first.-->
 <style>
 
@@ -22,9 +22,198 @@ body{font-family: 'Pridi', serif;}
 h1.a{font-family: 'Abel', sans-serif;}
 h1.a {font-size: 80px;}
 
+
+img{width: 300px;
+height: 400px}
+
+h3{color:lightpink}
+
+
+
+.grid-container {
+  display: grid;
+
+  grid: 170px / auto auto ;
+  grid-gap: 5px;
+  background-color: Burlywood;
+  padding-bottom: 10x;
+  padding: 10px;
+}
+
+.item1 {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+
+}
+
+.item2 {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+
+}
+
+.grid-container > div {
+  background-color: bisque;
+  text-align: left;
+  padding: 10px 0;
+
+    width: 100% ;
+  font-size: 14px;
+
+}
+
+.media {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.media > * {
+    flex: 1 1 250px;
+}
 </style>
+
+
+<script>
+$(document).ready(function(){
+$("li").click(function(){
+  $(this).hide();
+});
+});
+
+
+$(document).ready(function(){
+$("h3").mouseover(function(){
+  $("h3").css("background-color", "plum");
+});
+$("h3").mouseout(function(){
+  $("h3").css("background-color", "lightgray");
+});
+});
+
+
+$(document).ready(function(){
+$("p").mouseenter(function(){
+  $("p").css("background-color", "Moccasin");
+});
+$("p").mouseleave(function(){
+  $("p").css("background-color", "tan");
+});
+});
+
+$(document).ready(function(){
+$("#button1").click(function(){
+  $("p").html("Tips:  Salting the water is your only opportunity to season the pasta itself. The water needs to “taste like the sea,” in order to flavour the pasta. Three litres of water requires a minimum of 1 tbsp salt.");
+});
+});
+
+$(document).ready(function(){
+$("#showimg").click(function(){
+  $("img").toggle();
+});
+});
+
+
+</script>
+
+
 </head>
 
 <body>
   <center><h1 class="a">Slow Cooked Ribs & Mac and Cheese</h1></center>
+    <center><h3>Serves 3</h3></center>
+    <center><button id="showimg">Hide or Show Image</button></center>
+
+
+  <br>
+  <center><img src="Images/Ribs.jpg"/></center>
+  </br>
+
+<center><h4>As you add each ingrediant, click the bullet to make it go away!</h4></center>
+<br>
+<div class="grid-container">
+  <div class="item1"><ul>
+    <li>Worcestershire Sauce</li>
+    <li>Mustard</li>
+    <li>Rib Rack Dry Rub</li>
+    <li>Salt</li>
+
+      </ul></div>
+
+
+<div class="item2"><ul>
+  <li>2 Tablespoon Butter</li>
+  <li>1 Tablspoon Olive Oil</li>
+  <li>Slab Of Ribs</li>
+  <li>Pepper</li>
+  <li>Onion Powder</li>
+
+  </ul></div>
+</div>
+</br>
+
+    </ul></div>
+  </div>
+</br>
+
+<h4>DIRECTIONS</h4>
+<center><h4>As you finish each step, click the bullet to make it go away!</h4></center>
+
+<h4>Slab of Ribs</h4>
+<ol>
+  <li>Put a slow cooker on low heat and set the timer for 8 hours.</li>
+<li>Take a slab of ribs an rub the Rib Rack Dry Rub onto the ribs.  Use salt, pepper, onion powder, worcestershire sauce, and mustard on your ribs.  Rub them well!</li>
+<li>Place the ribs in the slow cooker</li>
+<li>Chop the onions and put them in the slow cooker along with olive oil and butter.</li>
+<li>Let your meal cook for 8 hours.</li>
+<li>When your home, remove the ribs from the slow cooker and broil them in the oven for 7 minutes.</li>
+<li>Take them out of the oven</li>
+</ol>
+
+<h4>Now for the Mac!!!</h4>
+<br>
+
+
+<div class="grid-container">
+  <div class="item1">
+      <ul>
+    <li>Elbow Mac and Cheese</li>
+    <li>Medium Shredded Cheddar Cheese</li>
+    <li>1/2 Cup Sour Cream</li>
+      </ul>
+      </div>
+
+
+
+<div class="item2">
+    <ul>
+  <li>1/2 Cup Cream Cheese</li>
+  <li>2 Tablespoon Butter (Melted)</li>
+  <li>1 Cup Cream</li>
+  <li>Salt and Pepper</li>
+    </ul>
+  </div>
+</div>
+  </br>
+
+<h4>DIRECTIONS</h4>
+<ol>
+<li>Take a large pot and fill with water about an inch from the brim.</li>
+<li>Add salt and pepper to the water.  Once the water starts boiling, add in the macaroni.</li>
+<li>While boiling the macaroni, grab a medium sized mixing bowl and an electronic mixer.</li>
+<li>Put sour cream and cream cheese into the bowl and use the electronic blender to evenly mix the two ingredients together.</li>
+<li>Once the macaroni is done cooking, get a colander and place it in your clean sink.  Pour the macaroni into the colander.  Rinse the macaroni with cold water</li>
+<li>Pour the first layer of macaroni into a medium sized baking pan.</li>
+<li>Add in the shredded cheese and the sour cream and cream cheese mix onto the Mac.  Were trying to layer it like its lasagna. </li>
+<li>Put provolone cheese slices on top of each layer of Mac.  There’s no such thing as too much cheese!</li>
+<li>Add the next layer of Mac and do the same thing until you reach three layers.
+<li>Take heavy whipping cream and pour through the layers of mac.  Take 3 tablspoons of melted butter and also pour through the mac layers.</li>
+<li>Some people may not like this, but I usually add a good amount of breadcrumbs on top of my Mac.</li>
+<li>Put the Mac into a 400 degrees oven and cook it for about 15 minutes.</li>
+<li>Right before you take it out, broil the Mac for only 2 minutes.  If the top of the Mac and cheese is already a nice light/medium brown color, don’t do this.</li>
+<li>Bon Appétit!</li>
+</ol>
+
+
 </body>

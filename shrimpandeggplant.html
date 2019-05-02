@@ -9,7 +9,7 @@
 <link rel="stylesheet" type="text/css" href="finalstyle.css">
 <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Pridi" rel="stylesheet">
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <!-- This is the beginning of style.  I listed my colors first.-->
 <style>
 
@@ -22,9 +22,170 @@ body{font-family: 'Pridi', serif;}
 h1.a{font-family: 'Abel', sans-serif;}
 h1.a {font-size: 80px;}
 
+
+img{width: 300px;
+height: 400px}
+
+h3{color:lightpink}
+
+
+.grid-container {
+  display: grid;
+
+  grid: 250px / auto auto ;
+  grid-gap: 5px;
+  background-color: Burlywood;
+  padding-bottom: 10x;
+  padding: 10px;
+}
+
+.item1 {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+
+}
+
+.item2 {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+
+}
+
+.grid-container > div {
+  background-color: bisque;
+  text-align: left;
+  padding: 10px 0;
+
+    width: 100% ;
+  font-size: 14px;
+
+}
+
+.media {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.media > * {
+    flex: 1 1 250px;
+}
 </style>
+
+
+<script>
+$(document).ready(function(){
+$("li").click(function(){
+  $(this).hide();
+});
+});
+
+
+$(document).ready(function(){
+$("h3").mouseover(function(){
+  $("h3").css("background-color", "plum");
+});
+$("h3").mouseout(function(){
+  $("h3").css("background-color", "lightgray");
+});
+});
+
+
+$(document).ready(function(){
+$("p").mouseenter(function(){
+  $("p").css("background-color", "Moccasin");
+});
+$("p").mouseleave(function(){
+  $("p").css("background-color", "tan");
+});
+});
+
+$(document).ready(function(){
+$("#button1").click(function(){
+  $("p").html("Tips:  Salting the water is your only opportunity to season the pasta itself. The water needs to “taste like the sea,” in order to flavour the pasta. Three litres of water requires a minimum of 1 tbsp salt.");
+});
+});
+
+$(document).ready(function(){
+$("#showimg").click(function(){
+  $("img").toggle();
+});
+});
+
+
+</script>
+
+
 </head>
 
 <body>
   <center><h1 class="a">Spicy Shrimp and Eggplant</h1></center>
+  <center><h3>Serves 4</h3></center>
+<center><button id="showimg">Hide or Show Image</button></center>
+  <br>
+  <center><img src="Images/spicyeggplant.jpg"/></center>
+  </br>
+
+
+<center><h4>As you add each ingrediant, click the bullet to make it go away!</h4></center>
+
+<br>
+<div class="grid-container">
+  <div class="item1"><ul>
+    <li>1 Eggpant</li>
+    <li>24 medium-sized uncooked shrimp</li>
+    <li>1/2 Cup Cream</li>
+    <li>Salt</li>
+    <li>Pepper</li>
+    <li>Onion Powder</li>
+    <li>Garlic Powder</li>
+    <li>Oregano</li>
+
+      </ul></div>
+
+
+<div class="item2"><ul>
+  <li>Olive Oil</li>
+  <li>Crushed Garlic</li>
+  <li>Corn</li>
+  <li>Tomato</li>
+  <li>Hot Pepper</li>
+  <li>Cilantro</li>
+  <li>Onion</li>
+  </ul></div>
+</div>
+</br>
+
+
+<h4>DIRECTIONS</h4>
+<center><h4>As you finish each step, click the bullet to make it go away!</h4></center>
+<ol>
+<li>Take an eggplant and wash it thoroughly.</li>
+<li>Put the eggplant on a cutting board and cut slices about 2 cm wide.</li>
+<li>Season the eggplant with salt, pepper, onion powder, garlic powder, and oregano.</li>
+<li>Put the eggplant in a saucepan and cook on each side on the slice for about 3 minutes each on high heat.</li>
+<li>Put the eggplant slices on a cooking sheet</li>
+<li>In another saucepan, add in olive oil and garlic on high heat.</li>
+<li>Season the shrimp and throw in the saucepan with the garlic and olive oil.</li>
+<li>Use tongs to remove the shrimp.  And put the shrimp in a separate bowl.</li>
+<li>Add heavy cream and butter to the saucepan.  Season the sauce and mix on medium heat.  </li>
+<li>Put sauce pan on the back burner and turn the stove on low.</li>
+<li>Chop the corn, onions, tomato, cilantro, and hot peppers and put them into a mixing bowl. </li>
+<li>Add salt and pepper to the mixing bowl and stir.</li>
+<li>Put the veggie mix on top of each eggplant slice</li>
+<li> Place the shrimp on top of the eggplant slices (about 3 shrimp per slice).</li>
+<li>Pour (or drizzle) the sauce on the eggplant.</li>
+<li>Put the oven on 400 and bake the eggplant for about 7 minutes.</li>
+  <li>Bon Appétit!</li>
+</ol>
+
+<center><h4>Eggplant Sauce</h4>
+<div class="iframe">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Nis5D5M9n9I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div><center>
+
+<center><h4>Finished Product</h4>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/PYhVZOixWsI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
 </body>

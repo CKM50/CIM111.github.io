@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+<!-- This is where the title is and the link to the external sheet. -->
+<title>Tinakelly</title>
+
+<link rel="stylesheet" type="text/css" href="finalstyle.css">
+<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Pridi" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/prototype/1.7.3.0/prototype.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/scriptaculous/1.9.0/scriptaculous.js"></script>
+<!-- This is the beginning of style.  I listed my colors first.-->
+<style>
+
+h1{color:Black;}
+body {color: black;}
+h1.a{color: hotpink;}
+
+
+body{font-family: 'Pridi', serif;}
+h1.a{font-family: 'Abel', sans-serif;}
+h1.a {font-size: 80px;}
+
+img{width: 300px;
+height: 400px}
+
+h3{color: lightpink}
+
+
+
+.grid-container {
+  display: grid;
+
+  grid: 220px / auto auto ;
+  grid-gap: 5px;
+  background-color: Burlywood;
+  padding-bottom: 10x;
+  padding: 10px;
+}
+
+.item1 {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+
+}
+
+.item2 {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+
+}
+
+.grid-container > div {
+  background-color: bisque;
+  text-align: left;
+  padding: 10px 0;
+
+    width: 100% ;
+  font-size: 14px;
+
+}
+
+.media {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.media > * {
+    flex: 1 1 250px;
+}
+</style>
+
+
+<script>
+
+
+$(document).ready(function(){
+$("li").click(function(){
+  $(this).hide();
+});
+});
+
+
+$(document).ready(function(){
+$("h3").mouseover(function(){
+  $("h3").css("background-color", "plum");
+});
+$("h3").mouseout(function(){
+  $("h3").css("background-color", "lightgray");
+});
+});
+
+
+$(document).ready(function(){
+$("p").mouseenter(function(){
+  $("p").css("background-color", "Moccasin");
+});
+$("p").mouseleave(function(){
+  $("p").css("background-color", "tan");
+});
+});
+
+
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dot[slideIndex-1].className += "active";
+
+}
+
+
+
+</script>
+</head>
+
+
+
+
+
+<body>
+  <center><h1 class="a">Creamy Shrimp & Chicken Alfredo</h1></center>
+    <center><h3>Serves 2</h3></center>
+ 
+
+<br>
+  <center><img src="Images/alfredo.jpg"/></center>
+</br>
+
+
+
+<center><h4>As you add each ingrediant, click the bullet to make it go away!</h4></center>
+<br>
+<div class="grid-container">
+  <div class="item1"><ul>
+    <li>Garlic</li>
+    <li>Buteer</li>
+    <li>Chicken Breast</li>
+    <li>Shrimp</li>
+    <li>Pasta</li>
+    <li>Cream</li>
+    <li>Provolone Cheese</li>
+    <li>Medium Cheddar Cheese</li>
+      </ul></div>
+
+
+<div class="item2"><ul>
+  <li>Olive Oil</li>
+  <li>A dash of Ole Bay Seasoning</li>
+  <li>Red Pepper</li>
+  <li>Salt</li>
+  <li>Pepper</li>
+  <li>Complete Seasoning</li>
+  <li>Chicken Seasoning</li>
+  </ul></div>
+</div>
+</br>
+
+
+
+<h4>DIRECTIONS</h4>
+<center><h4>As you finish each step, click the bullet to make it go away!</h4></center>
+<ol>
+      <li>  Take a medium sized pot and fill it with water an inch and a half from the brim of the pot.  Add in the seasioning to the water.  Bring the water to a boil.</li>
+      <li>Take a little more than half of the linguini from the pasta pack and drop it in the pot once it reaches the boiling point.  Let the noodles cook.</li>
+      <li>In another pan, take a tablespoon of olive oil, a tablespoon of butter, and a tablespoon of minced garlic. </li>
+      <li>Take your shrimp and chicken and lay them in two separate mixing bowls.  Add olive oil and all the seasonings to each bowl.  Dont add the crushed chicken bullion to the shrimp.</li>
+      <li>Place the shrimp and chicken in the saucepan.</li>
+      <li>Once the shrimp and chicken are halfway cooked, add in the heavy whipping cream.   Add in all the seasoning for flavor minus the chicken bullion seasoning.  Put the stove on a medium heat.</li>
+      <li>When the cream starts to bubble, add in the shredded cheddar cheese.</li>
+      <li>Put a top of the saucepan and cover for 6 minutes.</li>
+      <li>Add the noodles in the saucepan and stir.</li>
+      <li>Bon Appétit!</li>
+  </ol>
+
+<center><h4>SO CREAMY</h4>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/gSRMs0m60T8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
+
+
+
+<center><div id="slidedown_demo" style="display:none; width:1000px; height:57px; background:burlywood; text-align:center; font-size:25">
+  <div><br>
+  The only time you can REALLY season your noodles is when you are boiling them in a pot!
+</br>  </div>
+
+<br>
+  </div>
+<a href="#" onclick="Effect.SlideDown('slidedown_demo'); return false;">Click here for a fact about cooking noodles!</a></center>
+</br>
+
+</body>
